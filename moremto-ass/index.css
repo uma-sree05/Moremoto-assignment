@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+body {
+    font-family: Inter;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+@media screen and (max-width:767px){
+  input{
+    width: 10vh;
+    padding: 5px;
+  }
+  .icon{
+    height: 15px;
+    width: 15px;
+  }
+  .list{
+    width: 40vh;
+  }
+  button{
+    border: none;
+    margin: 5px;
+    background-color: white;
+  }
+  .App {
+    text-align: center;
+    padding: 20px;
+  }
+  .product-title{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .highlight {
+    background-color: yellow; 
+  }
+  .para{
+    font-weight: normal;
+  }
+ .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin: 20px;
+  }
+  .list-view .product {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 40px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width:100px;
+  }
+  
+  .list-view .product img {
+    width: 80px; 
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .list-view .product .content {
+    flex: 1;
+  }
+  
+  .list-view .product p {
+    margin: 0;
+  }
+  .list-view .product .variants {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; 
+  }
+  
+  .list-view .product .variants p {
+    margin: 0;
+  }
+
+  .grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    max-width: 1000px; 
+    margin: 0 auto;
+  }
+  
+  .grid-view .product {
+    display: block;
+    text-align: center;
+  }
+  
+  .grid-view .product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    input{
+      width: 50vh;
+      padding: 5px;
+    }
+    .list{
+        width: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    .icon{
+      height: 15px;
+      width: 15px;
+    }
+    button{
+      border: none;
+      margin: 5px;
+      background-color: white;
+    }
+    .App {
+      text-align: center;
+      padding: 20px;
+    }
+    .product-title{
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .highlight {
+      background-color: yellow; 
+    }
+    .para{
+      font-weight: normal;
+    }
+   .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      margin: 20px;
+    }
+    .list-view .product {
+      display: flex;
+      align-items: center;
+      width: 80%;
+      margin: 40px auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      max-width: 400px;
+    }
+    
+    .list-view .product img {
+      width: 80px; 
+      height: auto;
+      margin-right: 20px;
+    }
+    
+    .list-view .product .content {
+      flex: 1;
+    }
+    
+    .list-view .product p {
+      margin: 0;
+    }
+    .list-view .product .variants {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px; 
+    }
+    
+    .list-view .product .variants p {
+      margin: 0;
+    }
+  
+    .grid-view {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+      max-width: 1000px; 
+      margin: 0 auto;
+    }
+    
+    .grid-view .product {
+      display: block;
+      text-align: center;
+    }
+    
+    .grid-view .product img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width:1025px){
+    input{
+      width: 50vh;
+      padding: 5px;
+    }
+    .list{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    .icon{
+      height: 15px;
+      width: 15px;
+    }
+    button{
+      border: none;
+      margin: 5px;
+      background-color: white;
+    }
+    .App {
+      text-align: center;
+      padding: 20px;
+    }
+    .product-title{
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .highlight {
+      background-color: yellow; 
+    }
+    .para{
+      font-weight: normal;
+    }
+   .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      margin: 20px;
+    }
+    .list-view .product {
+      display: flex;
+      align-items: center;
+      width: 80%;
+      margin: 40px auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      max-width: 400px;
+    }
+    
+    .list-view .product img {
+      width: 80px; 
+      height: auto;
+      margin-right: 20px;
+    }
+    
+    .list-view .product .content {
+      flex: 1;
+    }
+    
+    .list-view .product p {
+      margin: 0;
+    }
+    .list-view .product .variants {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px; 
+    }
+    
+    .list-view .product .variants p {
+      margin: 0;
+    }
+  
+    .grid-view {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+      max-width: 1000px; 
+      margin: 0 auto;
+    }
+    
+    .grid-view .product {
+      display: block;
+      text-align: center;
+    }
+    
+    .grid-view .product img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
